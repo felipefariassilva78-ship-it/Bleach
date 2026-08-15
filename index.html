@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bleach — Fan Site feito por Felps</title>
+    <meta name="description" content="Fan site do anime Bleach: personagens, história, arcos da saga e o mundo dos Shinigami, Hollows, Arrancar e Quincy.">
+    <meta name="theme-color" content="#e8622c">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231e2a4a'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23e8622c' stroke-width='2.5'/%3E%3Cpath d='M16 8v12' stroke='%23e8622c' stroke-width='3' stroke-linecap='round'/%3E%3Cpath d='M11 25h10' stroke='%23e8622c' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Ir para o conteúdo principal</a>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a class="logo" href="#home" aria-label="Bleach — voltar ao início">
+                <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+                    <rect width="32" height="32" rx="8" fill="#1e2a4a"/>
+                    <circle cx="16" cy="16" r="9" fill="none" stroke="#e8622c" stroke-width="2.5"/>
+                    <path d="M16 8v12" stroke="#e8622c" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M11 25h10" stroke="#e8622c" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-copy">
+                    <span class="logo-text">Bleach</span>
+                    <span class="logo-subtitle">Fan Site por Felps</span>
+                </span>
+            </a>
+
+            <nav class="nav" id="nav" aria-label="Navegação principal">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="#home">Início</a></li>
+                    <li><a class="nav-link" href="#characters">Personagens</a></li>
+                    <li><a class="nav-link" href="#story">História</a></li>
+                    <li><a class="nav-link" href="#arcs">Arcos</a></li>
+                    <li><a class="nav-link" href="#world">Mundo</a></li>
+                </ul>
+            </nav>
+
+            <a class="btn btn-primary btn--sm nav-cta" href="#characters">
+                Explorar
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="Abrir menu de navegação" aria-controls="nav" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <section class="hero" id="home" aria-label="Apresentação">
+            <div class="hero-glow hero-glow--one" aria-hidden="true"></div>
+            <div class="hero-glow hero-glow--two" aria-hidden="true"></div>
+            <div class="container hero-inner">
+                <div class="hero-content">
+                    <span class="hero-badge">Fan Site · Sem fins lucrativos</span>
+                    <h1 class="hero-title">
+                        <span class="hero-eyebrow">Bem-vindo ao mundo de</span>
+                        <span class="hero-title-main">Bleach</span>
+                        <span class="hero-title-sub">Almas, espadas e destino</span>
+                    </h1>
+                    <p class="hero-text">
+                        Entre no universo em que os Shinigami protegem o mundo dos vivos contra Hollows e outras ameaças sobrenaturais — e acompanhe a jornada de Ichigo Kurosaki.
+                    </p>
+                    <div class="hero-buttons">
+                        <a class="btn btn-primary" href="#characters">
+                            Ver Personagens
+                            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                        </a>
+                        <a class="btn btn-ghost" href="#story">Ler a História</a>
+                    </div>
+                    <ul class="hero-meta">
+                        <li><strong>766</strong><span>capítulos de mangá</span></li>
+                        <li><strong>366+</strong><span>episódios de anime</span></li>
+                        <li><strong>2001</strong><span>início da obra</span></li>
+                    </ul>
+                </div>
+
+                <div class="hero-visual" aria-hidden="true">
+                    <svg class="hero-emblem" viewBox="0 0 240 240">
+                        <defs>
+                            <linearGradient id="blade" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0" stop-color="#f9fafb"/>
+                                <stop offset="1" stop-color="#d7dde5"/>
+                            </linearGradient>
+                            <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+                                <stop offset="0" stop-color="#e8622c"/>
+                                <stop offset="1" stop-color="#c94f1f"/>
+                            </linearGradient>
+                        </defs>
+                        <g class="emblem-rotor">
+                            <circle cx="120" cy="120" r="104" fill="none" stroke="url(#ring)" stroke-width="3" stroke-dasharray="12 10"/>
+                        </g>
+                        <circle cx="120" cy="120" r="86" fill="rgba(232,98,44,0.08)"/>
+                        <circle cx="120" cy="120" r="86" fill="none" stroke="#e3e7ef"/>
+                        <path class="emblem-blade" d="M120 52 C118 86 118 106 120 128" stroke="url(#blade)" stroke-width="10" stroke-linecap="round"/>
+                        <path d="M120 128 v22" stroke="#e8622c" stroke-width="10" stroke-linecap="round"/>
+                        <path d="M110 150 h20" stroke="#e8622c" stroke-width="8" stroke-linecap="round"/>
+                    </svg>
+                    <span class="hero-orbit hero-orbit--a"></span>
+                    <span class="hero-orbit hero-orbit--b"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--white" id="characters" aria-labelledby="characters-title">
+            <div class="container">
+                <header class="section-head">
+                    <span class="section-kicker">Elenco principal</span>
+                    <h2 class="section-title" id="characters-title">Personagens Principais</h2>
+                    <p class="section-subtitle">Conheça os Shinigami que protegem os dois mundos</p>
+                </header>
+                <div class="card-grid">
+
+                    <article class="card character-card" data-reveal>
+                        <div class="character-media">
+                            <img class="character-photo" src="https://i.pinimg.com/1200x/07/6e/da/076edadb2a483e1c2605898b6ed8ea13.jpg" alt="Ichigo Kurosaki" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="character-name">Ichigo Kurosaki</h3>
+                            <p class="character-role">Shinigami Substituto</p>
+                            <p class="character-desc">Um adolescente que ganha poderes de Shinigami e passa a proteger os outros contra os Hollows.</p>
+                        </div>
+                    </article>
+
+                    <article class="card character-card" data-reveal>
+                        <div class="character-media">
+                            <img class="character-photo" src="https://i.pinimg.com/736x/d3/11/14/d31114911c17bd3381c9b0129429d50f.jpg" alt="Rukia Kuchiki" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="character-name">Rukia Kuchiki</h3>
+                            <p class="character-role">Shinigami</p>
+                            <p class="character-desc">A Shinigami que desencadeia os poderes de Ichigo e se torna sua amiga e mentora.</p>
+                        </div>
+                    </article>
+
+                    <article class="card character-card" data-reveal>
+                        <div class="character-media">
+                            <img class="character-photo" src="https://i.pinimg.com/1200x/fb/04/f0/fb04f0cb47974349ac813b7895d2213b.jpg" alt="Byakuya Kuchiki" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="character-name">Byakuya Kuchiki</h3>
+                            <p class="character-role">Capitão da 6ª Divisão</p>
+                            <p class="character-desc">Irmão adotivo de Rukia e um dos capitães mais respeitados da Gotei 13.</p>
+                        </div>
+                    </article>
+
+                    <article class="card character-card" data-reveal>
+                        <div class="character-media">
+                            <img class="character-photo" src="https://i.pinimg.com/1200x/ff/90/21/ff90219888700845c89af179694920fb.jpg" alt="Renji Abarai" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="character-name">Renji Abarai</h3>
+                            <p class="character-role">Tenente da 6ª Divisão</p>
+                            <p class="character-desc">Um tenente leal com uma Zanpakuto singular chamada Zabimaru.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--soft" id="story" aria-labelledby="story-title">
+            <div class="container">
+                <header class="section-head">
+                    <span class="section-kicker">A trama</span>
+                    <h2 class="section-title" id="story-title">A História</h2>
+                    <p class="section-subtitle">Uma jornada de almas, poder e destino</p>
+                </header>
+                <div class="story-layout" data-reveal>
+                    <div class="story-text">
+                        <p>
+                            Ichigo Kurosaki, um garoto de 15 anos capaz de enxergar fantasmas, encontra Rukia Kuchiki, uma Shinigami da Sociedade das Almas. Quando Rukia é gravemente ferida ao proteger a família de Ichigo de um Hollow, ela transfere seus poderes de Shinigami para ele.
+                        </p>
+                        <p>
+                            Agora armado com habilidades de Shinigami, Ichigo precisa assumir a responsabilidade de proteger os inocentes e enfrentar ameaças sobrenaturais. Sua jornada o leva até a própria Sociedade das Almas, onde enfrenta os mais poderosos Shinigami e descobre a verdade sobre seus próprios poderes.
+                        </p>
+                        <p>
+                            Ao longo do caminho, Ichigo faz amizades e enfrenta inimigos formidáveis, cada encontro o transformando em um guerreiro mais forte. A linha entre o bem e o mal se torna tênue quando ele descobre que alguns de seus maiores adversários compartilham o mesmo objetivo de proteger aqueles que amam.
+                        </p>
+                    </div>
+                    <div class="story-visual">
+                        <div class="hollow-mask" role="img" aria-label="Máscara de Hollow"></div>
+                        <p class="story-caption">A máscara de um Hollow — a marca da corrupção das almas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--white" id="arcs" aria-labelledby="arcs-title">
+            <div class="container">
+                <header class="section-head">
+                    <span class="section-kicker">Linha do tempo</span>
+                    <h2 class="section-title" id="arcs-title">Arcos da Saga</h2>
+                    <p class="section-subtitle">As grandes jornadas de Ichigo</p>
+                </header>
+                <div class="card-grid">
+
+                    <article class="card arc-card" data-reveal>
+                        <div class="card-body">
+                            <span class="arc-number">01</span>
+                            <h3 class="arc-name">Agente Shinigami</h3>
+                            <p class="arc-desc">Ichigo recebe os poderes de Rukia e começa sua vida como Shinigami substituto, enfrentando os primeiros Hollows.</p>
+                            <span class="arc-meta">Anime · Ep. 1–20</span>
+                        </div>
+                    </article>
+
+                    <article class="card arc-card" data-reveal>
+                        <div class="card-body">
+                            <span class="arc-number">02</span>
+                            <h3 class="arc-name">Soul Society</h3>
+                            <p class="arc-desc">A invasão da Sociedade das Almas para resgatar Rukia, revelando os segredos e os capitães da Gotei 13.</p>
+                            <span class="arc-meta">Anime · Ep. 21–63</span>
+                        </div>
+                    </article>
+
+                    <article class="card arc-card" data-reveal>
+                        <div class="card-body">
+                            <span class="arc-number">03</span>
+                            <h3 class="arc-name">Arrancar</h3>
+                            <p class="arc-desc">A chegada de Aizen e a invasão de Hueco Mundo em busca de Orihime, com as batalhas contra os Espada.</p>
+                            <span class="arc-meta">Anime · Ep. 110–167</span>
+                        </div>
+                    </article>
+
+                    <article class="card arc-card" data-reveal>
+                        <div class="card-body">
+                            <span class="arc-number">04</span>
+                            <h3 class="arc-name">Guerra dos Mil Anos</h3>
+                            <p class="arc-desc">O confronto final contra Yhwach e os Quincy, decidindo o destino da Sociedade das Almas e do mundo.</p>
+                            <span class="arc-meta">Anime · TYBW</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--soft" id="world" aria-labelledby="world-title">
+            <div class="container">
+                <header class="section-head">
+                    <span class="section-kicker">O universo</span>
+                    <h2 class="section-title" id="world-title">O Mundo de Bleach</h2>
+                    <p class="section-subtitle">As raças e facções do universo</p>
+                </header>
+                <div class="card-grid">
+
+                    <article class="card world-card" data-reveal>
+                        <div class="card-body">
+                            <svg class="world-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 20 5v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V5l8-3z"/></svg>
+                            <h3 class="world-name">Shinigami</h3>
+                            <p class="world-desc">Almas com poder espiritual que protegem o mundo dos vivos, purificam os Hollows e guiam as almas para a Sociedade das Almas.</p>
+                        </div>
+                    </article>
+
+                    <article class="card world-card" data-reveal>
+                        <div class="card-body">
+                            <svg class="world-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9 11v2M15 11v2"/></svg>
+                            <h3 class="world-name">Hollows</h3>
+                            <p class="world-desc">Almas corrompidas pelo sofrimento, marcadas por uma máscara branca e um buraco no peito, que devoram outras almas.</p>
+                        </div>
+                    </article>
+
+                    <article class="card world-card" data-reveal>
+                        <div class="card-body">
+                            <svg class="world-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 0 1 18 0"/><path d="M8.5 10v2M15.5 10v2"/></svg>
+                            <h3 class="world-name">Arrancar</h3>
+                            <p class="world-desc">Hollows que quebraram parte de sua máscara e obtiveram poderes semelhantes aos de um Shinigami.</p>
+                        </div>
+                    </article>
+
+                    <article class="card world-card" data-reveal>
+                        <div class="card-body">
+                            <svg class="world-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 21 12l-9 9-9-9z"/><path d="M12 7 17 12l-5 5-5-5z"/></svg>
+                            <h3 class="world-name">Quincy</h3>
+                            <p class="world-desc">Humanos com a habilidade de destruir Hollows usando a energia espiritual do mundo ao redor.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="logo logo--footer" href="#home" aria-label="Voltar ao topo">
+                        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true">
+                            <rect width="32" height="32" rx="8" fill="#fff"/>
+                            <circle cx="16" cy="16" r="9" fill="none" stroke="#e8622c" stroke-width="2.5"/>
+                            <path d="M16 8v12" stroke="#e8622c" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                        <span class="logo-copy">
+                            <span class="logo-text">Bleach</span>
+                            <span class="logo-subtitle">Fan Site por Felps</span>
+                        </span>
+                    </a>
+                    <p class="footer-about">Fan site independente e sem fins lucrativos, criado por Felps para celebrar o universo de Bleach.</p>
+                </div>
+                <nav class="footer-nav" aria-label="Navegação do rodapé">
+                    <strong class="footer-nav-title">Navegar</strong>
+                    <a href="#home">Início</a>
+                    <a href="#characters">Personagens</a>
+                    <a href="#story">História</a>
+                    <a href="#arcs">Arcos</a>
+                    <a href="#world">Mundo</a>
+                </nav>
+                <div class="footer-legal">
+                    <strong class="footer-nav-title">Aviso</strong>
+                    <p>Bleach é uma obra de Tite Kubo. Os direitos autorais pertencem a Shueisha, TV Tokyo, dentsu e Pierrot. Este é um site de fã, sem afiliação oficial.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Fan Site feito por Felps. Todos os direitos reservados.</p>
+                <p>Feito com HTML, CSS e JavaScript · 100% estático</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Voltar ao topo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

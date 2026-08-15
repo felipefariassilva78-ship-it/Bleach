@@ -1,0 +1,12 @@
+{
+  "name": "bleach-fan-site",
+  "version": "2.0.0",
+  "description": "Fan site do anime Bleach - HTML, CSS e JavaScript puros (sem build)",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve .",
+    "build": "echo \"Site estático - nenhum build necessário\""
+  }
+}
